@@ -1,4 +1,9 @@
 {
+  "name": "autoliina",
+  "version": "1.0.0",
+  "bin": {
+    "autoliina": "./bin/autoliina.js"
+  },
   "scripts": {
     "convert": "node bin/autoliina.js convert",
     "substack": "node bin/autoliina.js substack",
