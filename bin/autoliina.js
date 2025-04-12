@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 
+const { execSync } = require("child_process");
 const [,, cmd, ...args] = process.argv;
 
 switch (cmd) {
   case "convert":
-    require('../lib/convert')(args);
+    execSync(`bash lib/convert.sh ${args.join(" ")}`, { stdio: "inherit" });
     break;
   case "substack":
-    require('../lib/substack')(args);
+    execSync(`bash lib/substack.sh ${args.join(" ")}`, { stdio: "inherit" });
     break;
   case "linkedin":
-    require('../lib/linkedin')(args);
+    execSync(`bash lib/linkedin.sh ${args.join(" ")}`, { stdio: "inherit" });
     break;
   default:
     console.log("Unknown command:", cmd);
