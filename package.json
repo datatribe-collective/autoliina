@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "convert": "node bin/autoliina.js convert",
+    "substack": "node bin/autoliina.js substack",
+    "linkedin": "node bin/autoliina.js linkedin"
+  }
+}
