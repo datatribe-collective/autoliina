@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* NOTES: 1. Error handling for execSync. 2. Input validation & sanitation */
+
 const { execSync } = require("child_process");
 const [,, cmd, ...args] = process.argv;
 
