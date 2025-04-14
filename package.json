@@ -2,11 +2,50 @@
   "name": "autoliina",
   "version": "1.0.0",
   "bin": {
-    "autoliina": "./bin/autoliina.js"
+    "autoliina": "bin/autoliina.js"
   },
   "scripts": {
     "convert": "node bin/autoliina.js convert",
     "substack": "node bin/autoliina.js substack",
     "linkedin": "node bin/autoliina.js linkedin"
+  },
+  "description": "Markdown content conversion to PDF with DataTribe styling and automated publishing to social media websites.",
+  "main": "autoliina.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datatribe-collective/autoliina.git"
+  },
+  "keywords": [
+    "datatribe",
+    "datatribe-collective",
+    "content",
+    "styling",
+    "automation",
+    "publishing",
+    "markdown",
+    "pdf"
+  ],
+  "author": "Eveliina Hampus",
+  "contributors": [{
+      "name": "Chanukya Pekala", 
+      "contribution": "Conceptual guidance, feature design, code review and manual testing"
+    },
+    {
+      "name": "Vaida Kavaliukaitė-Kaijanmäki", 
+      "contribution": "Name suggestion"
+    }],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datatribe-collective/autoliina/issues"
+  },
+  "homepage": "https://github.com/datatribe-collective/autoliina#readme",
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
